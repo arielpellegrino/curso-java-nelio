@@ -1,4 +1,4 @@
-package basico;
+package mod1;
 
 import java.util.Locale;
 import java.util.Scanner;

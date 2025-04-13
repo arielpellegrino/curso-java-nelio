@@ -1,4 +1,4 @@
-package basico;
+package mod1;
 
 
 public class ProcessamentoDadosCasting {

@@ -1,4 +1,4 @@
-package basico;
+package mod1;
 
 public class FuncMath1 {
     public static void main(String[] args) {
