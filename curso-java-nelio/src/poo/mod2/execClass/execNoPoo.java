@@ -1,32 +1,32 @@
-package poo.mod2;
+package poo.mod2.execClass;
 
 //calculo de dimensões de um trinangulo SEM a utilização de classes
-
 import java.util.Locale;
 import java.util.Scanner;
 
 public class execNoPoo {
     public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
         Locale.setDefault(Locale.US);
+        Scanner sc = new Scanner(System.in);
 
-        double xA, xB, xC, yA, yB, yC;
+        Triangle x, y;
+
+        x = new Triangle();
+        y = new Triangle();
 
         System.out.printf("Entre com as dimensões do trinangulo X:");
-        xA = sc.nextDouble();
-        xB = sc.nextDouble();
-        xC = sc.nextDouble();
+        x.a = sc.nextDouble();
+        x.b = sc.nextDouble();
+        x.c = sc.nextDouble();
 
         System.out.printf("Entre com as dimensões do trinangulo Y:");
-        yA = sc.nextDouble();
-        yB = sc.nextDouble();
-        yC = sc.nextDouble();
+        y.a = sc.nextDouble();
+        y.b = sc.nextDouble();
+        y.c = sc.nextDouble();
 
-        double p = (xA + xB + xC) / 2.0;
-        double areaX = Math.sqrt(p *(p - xA) * (p - xB) * (p - xC));
+        double areaX = x.area();
 
-        p = (yA + yB + yC) / 2.0;
-        double areaY = Math.sqrt(p *(p - yA) * (p - yB) * (p - yC));
+        double areaY = y.area();
 
         System.out.printf("Trangulo X area: %.4f%n", areaX);
         System.out.printf("Trangulo Y area: %.4f%n", areaY);
