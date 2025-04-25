@@ -1,8 +1,6 @@
 package poo.mod2.execFixacao.exec2;
 
 import java.util.Scanner;
-
-
 /*
  * Fazer um programa para ler os dados de um funcionário (nome, salário bruto e imposto).
  * Em seguida, mostrar os dados do funcionário (nome e salário líquido).
@@ -27,9 +25,11 @@ public class MainExec2 {
                                    + method.nome
                                    + ", recebe hoje um total de: R$"
                                    + method.salarioBruto
+                                   + ", pagando de imposto um total de: R$"
+                                   + method.calculaImposto()
                                    + ", com descontos, sobrando "
                                    + method.calculoSalarioLiquido());
-
+        System.out.println("------------------------------------------------");
         System.out.print("Deseja realizar um aumento de salario para o funcionario?");
         String aumento = ler.toString();
 

@@ -11,6 +11,10 @@ public class Methods {
             return salarioBruto * imposto;
         }
 
+        public double calculaImposto(){
+            return salarioBruto * (imposto / 100);
+        }
+
         public double aumentoSalario(String condicao){
             if(condicao.equals("sim")){
                return (this.salarioBruto * this.valorAumento) / 100;
