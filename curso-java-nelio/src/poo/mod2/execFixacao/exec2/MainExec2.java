@@ -21,6 +21,7 @@ public class MainExec2 {
         System.out.print("Digite o valor do imposto: ");
         method.imposto = ler.nextDouble();
 
+
         System.out.println("O funcionário "
                                    + method.nome
                                    + ", recebe hoje um total de: R$"
